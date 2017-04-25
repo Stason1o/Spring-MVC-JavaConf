@@ -17,7 +17,8 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc
 @ComponentScan(basePackages = "com.endava.spring")
 public class HelloWorldConfiguration extends WebMvcConfigurerAdapter{
-    @Bean
+
+    @Bean(name = "Hello World")
     public ViewResolver viewResolver(){
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
@@ -26,7 +27,7 @@ public class HelloWorldConfiguration extends WebMvcConfigurerAdapter{
         return viewResolver;
     }
 
-    public void addResourceHandler(ResourceHandlerRegistry registry){
+    public void addResourceHandlers(ResourceHandlerRegistry registry){
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources");
     }
 }
