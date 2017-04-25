@@ -23,3 +23,11 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+.idea/vcs.xml
+target/HelloWorld-XmlConfiguration-1.0-SNAPSHOT/WEB-INF/classes/
+target/HelloWorld-XmlConfiguration-1.0-SNAPSHOT/WEB-INF/lib/
+target/classes/
+target/generated-sources/
+HelloWorldXmlConfiguration.iml
+!/.idea/vcs.xml
+!/.idea/workspace.xml
