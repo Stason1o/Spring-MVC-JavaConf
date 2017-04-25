@@ -1,1 +1,1 @@
-#Spring mvc xml config
+# Spring MVC project
